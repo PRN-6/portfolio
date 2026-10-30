@@ -1,12 +1,47 @@
-# React + Vite
+# Simple Portfolio (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A free, open-source portfolio website template built with React and Vite. Use it to
+showcase your work, services, and contact information.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive single-page portfolio layout
+- Sections: Hero, About, Services, Projects, Contact, Footer
+- Tabbed About section (Skills / Experience / Education)
+- Smooth scrolling navigation
+- Easy to customize data files
 
-## Expanding the ESLint configuration
+## Getting started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+Open http://localhost:5173 in your browser.
+
+## Scripts
+
+- `npm run dev` - start the development server
+- `npm run build` - build for production
+- `npm run preview` - preview the production build
+- `npm run lint` - run ESLint
+
+## Customizing
+
+- Personal name/intro: `src/components/hero/Hero.jsx`
+- About text, skills, experience, education: `src/components/about/About.jsx`
+- Services: `src/assets/services_data.js`
+- Projects: `src/assets/mywork_data.js` (add your images to `src/assets`)
+- Contact details: `src/components/contact/Contact.jsx`
+- Replace images in `src/assets/` (profile picture, project screenshots, logo)
+- Resume link: `src/components/hero/Hero.jsx` and `src/components/about/About.jsx`
+
+## Deploying
+
+Run `npm run build`. The output in `dist/` can be deployed to any static host
+(Vercel, Netlify, GitHub Pages, etc.).
+
+## License
+
+Free to use for personal and commercial portfolios.

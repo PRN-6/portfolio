@@ -55,3 +55,24 @@
     color: white;
     border: 2px solid white;
 }
+.hero-actions .hero-connect,
+.hero-actions .hero-resume {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-actions .hero-connect:hover {
+  background: linear-gradient(90deg, #ff0080, #7928ca);
+  color: white;
+}
+
+.hero-actions .hero-resume:hover {
+  background: white;
+  color: black;
+}
+
+@media (max-width: 900px) {
+  .hero img { width: 220px; height: 220px; margin-top: 80px; }
+  .hero h1 { font-size: 42px; width: 100%; }
+  .hero p { width: 90%; font-size: 16px; line-height: 28px; }
+}

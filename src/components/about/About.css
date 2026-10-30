@@ -1,0 +1,150 @@
+.about {
+  margin: 80px 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.about-title {
+  text-align: center;
+}
+
+.about-title h1 {
+  font-size: 80px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #ff0080, #7928ca);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-sections {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.about-left img {
+  width: 380px;
+  height: 380px;
+  object-fit: contain;
+}
+
+.about-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about-para p {
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 12px;
+}
+
+.about-tabs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.about-tabs button {
+  background: transparent;
+  color: #d4d4d4;
+  border: 1px solid #444;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.about-tabs button.active,
+.about-tabs button:hover {
+  background: linear-gradient(90deg, #ff0080, #7928ca);
+  color: white;
+  border-color: transparent;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+}
+
+.skills-list li {
+  background: #1f1f1f;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 15px;
+  border: 1px solid #333;
+}
+
+.timeline-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.timeline-list li {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.tl-year {
+  color: #ff0080;
+  font-weight: 600;
+  min-width: 130px;
+}
+
+.tl-role {
+  font-weight: 500;
+}
+
+.tl-place {
+  color: #888;
+  font-size: 14px;
+}
+
+.about-achievements {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.about-achievements .achievement h2 {
+  font-size: 36px;
+  background: linear-gradient(90deg, #ff0080, #7928ca);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-achievements .achievement p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.resume-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-bottom: 1px solid white;
+  padding-bottom: 4px;
+}
+
+@media (max-width: 900px) {
+  .about { margin: 60px 24px; }
+  .about-sections { flex-direction: column; }
+  .about-left img { width: 260px; height: 260px; }
+  .about-title h1 { font-size: 48px; }
+}

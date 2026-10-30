@@ -1,12 +1,30 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-  height: 100vh;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
   background-color: #161513;
-  color:white;
-  font-family: 'outfit';
+  color: white;
+  font-family: 'Outfit', sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+@media (max-width: 900px) {
+  .about, .services, .mywork, .contact, .footer, .navbar {
+    word-wrap: break-word;
+  }
+}
